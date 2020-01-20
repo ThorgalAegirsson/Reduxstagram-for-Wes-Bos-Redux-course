@@ -240,7 +240,7 @@ h1 a:focus {
   font-style: normal;
 }
 
-.likes-heart {
+.likes-heart, .like {
 	opacity: 0;
 	transition: all 0.5s;
 	transform: translateX(-50%) translateY(-50%) scale(5);

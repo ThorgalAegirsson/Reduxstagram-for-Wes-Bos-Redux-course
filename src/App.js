@@ -19,7 +19,7 @@ class App extends React.Component {
           <Switch>
             <Route path='/view/:postId' component={Single} />
             <Route exact path='/' component={PhotoGrid} />
-          </Switch>
+        </Switch>
         </div>
     );
   }

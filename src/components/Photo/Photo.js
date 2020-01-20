@@ -14,13 +14,11 @@ class Photo extends Component {
 
                     <TransitionGroup>
                         <CSSTransition
-                            className='likes-heart'
-                            timeout={500}
+                            classNames="like"
                             key={post.likes}
+                            timeout={500}
                         >
-                            <span key={post.likes} className="likes-heart">
-                                {post.likes}
-                            </span>
+                            <span className="likes-heart">{post.likes}</span>
                         </CSSTransition>
                     </TransitionGroup>
                 </div>
