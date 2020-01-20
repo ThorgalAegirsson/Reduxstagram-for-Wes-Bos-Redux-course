@@ -8,9 +8,6 @@ class Comments extends Component {
     handleSubmit = e => {
         e.preventDefault();
         const { postId } = this.props.match.params;
-        console.log(postId)
-        console.log(e);
-        console.log(this);
         this.props.addComment(postId, this.author.current.value, this.comment.current.value);
         this.commentForm.current.reset();
     }
@@ -30,7 +27,6 @@ class Comments extends Component {
     render() {
         return (
             <div className="comments">
-                {console.log(this.props.postComments)}
                 {this.props.postComments.map(this.renderComments)}
                 <form
                     ref={this.commentForm}

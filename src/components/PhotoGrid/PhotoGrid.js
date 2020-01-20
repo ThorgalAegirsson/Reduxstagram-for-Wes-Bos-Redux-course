@@ -5,10 +5,6 @@ import Photo from '../Photo/Photo';
 import * as actions from '../../store/actions/';
 
 class PhotoGrid extends Component {
-    state = {
-
-    }
-
     render() {
         return (
             <div className="photo-grid">

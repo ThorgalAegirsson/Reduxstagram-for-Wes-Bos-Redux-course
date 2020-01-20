@@ -1,5 +1,5 @@
 import { createStore, combineReducers, compose, applyMiddleware } from 'redux';
-import thunk from "redux-thunk";
+import thunk from "redux-thunk"; //NOT IN USE IN THIS VERSION
 
 import postReducer from './reducers/postReducer';
 import commentsReducer from './reducers/commentsReducer';

@@ -6,7 +6,6 @@ const initialState = [...posts];
 
 
 export default (state = initialState, action) => {
-    console.log(state, action);
     switch (action.type) {
         case actionTypes.INCREMENT_LIKES:
             const index = action.index;

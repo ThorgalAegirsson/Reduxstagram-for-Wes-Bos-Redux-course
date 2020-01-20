@@ -17,7 +17,6 @@ const postComments = (state = [], action) => {
                 }
             ];
         case actionTypes.REMOVE_COMMENT:
-            console.log('removing comment')
             return [
                 ...state.slice(0, action.index),
                 ...state.slice(action.index + 1)

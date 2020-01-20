@@ -7,7 +7,6 @@ import Comments from '../Comments/Comments';
 import * as actions from '../../store/actions/';
 
 class Single extends Component {
-    
     render() {
         const {postId} = this.props.match.params;
         const index = this.props.posts.findIndex(post => post.code === postId);
