@@ -7,13 +7,16 @@ import Comments from '../Comments/Comments';
 import * as actions from '../../store/actions/';
 
 class Single extends Component {
+    
     render() {
-        const index = this.props.posts.findIndex(post => post.code === this.props.match.params.postId);
+        const {postId} = this.props.match.params;
+        const index = this.props.posts.findIndex(post => post.code === postId);
         const post = this.props.posts[index];
+        const postComments = this.props.comments[postId] || [];
         return (
             <div className="single-photo">
                 <Photo post={post} index={index} {...this.props} />
-                <Comments />
+                <Comments postComments={postComments} {...this.props} />
             </div>
         );
     }
