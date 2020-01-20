@@ -1,5 +1,5 @@
 export {
     incrementLikes,
-    addComent,
+    addComment,
     removeComment
 } from './post';

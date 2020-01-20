@@ -257,7 +257,7 @@ h1 a:focus {
 	transform: translateX(-50%) translateY(-50%) scale(5);
 }
 
-.likes-heart .like-leave-active {
+.likes-heart .like-exit-active {
 	display: none;
 }
 
